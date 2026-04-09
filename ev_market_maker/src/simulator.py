@@ -1,7 +1,4 @@
 """
-simulator.py
- 
-Runs the full simulation loop.
  
 The game contract: MM quotes on the sum of cards that will remain
 after N_STOP cards are drawn. Settlement = actual sum of those leftover cards.
@@ -13,11 +10,6 @@ Each step:
   4. Draw next card (information update)
   5. Repeat until N_STOP draws done
   6. Settle: inventory * true_remaining_sum + cash collected
- 
-This mirrors how Optiver thinks about market making:
-  - Quote around fair value
-  - Profit from the spread on noise traders
-  - Protect against informed traders who know more than you
 """
  
 import numpy as np
