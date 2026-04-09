@@ -1,11 +1,6 @@
 """
-traders.py
- 
-Simulated counterparties for the market maker to trade against.
- 
 Two types:
   1. NoiseTrader — trades randomly with no informational edge.
-     These are the MM's bread and butter — they pay the spread.
  
   2. InformedTrader — knows information the MM doesn't.
      Two variants:
